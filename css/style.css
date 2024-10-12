@@ -264,7 +264,7 @@ header .container nav .navList li.active::before {
   left: 60%;
   background-color: var(--titles-color);
   color: white;
-  padding: 10px 25px;
+  padding: 10px 15px;
   z-index: 10;
   animation: floatingPesdu linear 3s infinite;
 }
@@ -275,7 +275,7 @@ header .container nav .navList li.active::before {
   bottom: 0;
   background-color: crimson;
   color: white;
-  padding: 10px 25px;
+  padding: 10px 15px;
   z-index: 10;
   animation: floatingPesdu linear 3s infinite;
   transform-origin: bottom right;
@@ -345,8 +345,6 @@ header .container nav .navList li.active::before {
     transform: rotate(360deg);
   }
 }
-.main .container .ImageInfo::before {
-}
 .main .container .info {
   text-align: center;
   margin: 40px 0;
@@ -386,12 +384,14 @@ header .container nav .navList li.active::before {
 .main .container .info .buttons a:nth-of-type(1) {
   background: crimson;
 }
-
-/* @media (max-width: 921px) {
-  .main .container .info p {
-    width: 98%;
+@media (max-width: 335px) {
+  .main .container .info h2 {
+    font-size:29px;
   }
-} */
+  .main .container .info p{
+    font-size:13px;
+  }
+}
 
 /* main end */
 .skills {
@@ -721,6 +721,12 @@ color: var(--titles-color);
   font-size:clamp(1.2rem,2rem,3rem);
   background:linear-gradient(45deg,crimson,var(--secondry-color),var(--titles-color));
 }
+@media (max-width: 335px){
+  .quto{
+    font-size:20px;
+    padding:30px 15px;
+  }
+}
 .quto span{
   font-size: 20px;
   margin-top: 20px;
@@ -823,6 +829,15 @@ footer .container .links .up i{
   }
   footer .container .links{
     order: 1;
+  }
+}
+@media (max-width: 335px){
+  footer .container .links ul li{
+    margin: 0 9px;
+  }
+  footer .container .Rights p{
+   font-size:16px;
+   text-align: center;
   }
 }
 /* footer end */
