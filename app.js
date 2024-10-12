@@ -45,3 +45,8 @@ let removeActiveFromSkills=()=>{
         skillBox.classList.remove("active");
     })
 }
+let progressspans=Array.from(document.querySelectorAll(".skills .container .content .box .BackSide .progress span"));
+progressspans.forEach((spans)=>{
+  spans.style.width=`${spans.dataset.target}`;
+  spans.innerHTML=spans.dataset.target;
+})

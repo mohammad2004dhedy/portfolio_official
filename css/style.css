@@ -451,7 +451,7 @@ header .container nav .navList li.active::before {
   left: 0;
   top: 0;
   background: white;
-  width: 80%;
+  width:0;
   height: 100%;
   color: crimson;
   display: inline-block;
