@@ -50,3 +50,27 @@ progressspans.forEach((spans)=>{
   spans.style.width=`${spans.dataset.target}`;
   spans.innerHTML=spans.dataset.target;
 })
+// contact 
+let textAreaInput=document.querySelector(".contact .content form .message textarea");
+let charCounter=document.querySelector(".contact .content form .message .Charlimit");
+let charProgressBar=document.querySelector(".contact .content form .message .CharProgress");
+let inputMaxLength=textAreaInput.getAttribute('maxlength');
+let submitBtn=document.querySelector('.contact .submitBtn')
+charCounter.innerHTML=inputMaxLength;
+textAreaInput.addEventListener('input',()=>{
+    let CurrentInputLength=textAreaInput.value.length;
+    charCounter.innerHTML=inputMaxLength-CurrentInputLength;
+    charProgressBar.style.width=`${(CurrentInputLength/inputMaxLength)*100}%`;
+    if(charCounter.innerHTML==0){
+        charCounter.classList.add('zero');
+        charProgressBar.style.backgroundColor='red';
+        submitBtn.setAttribute('title',"you have reached the limit :(");
+    }
+    else{
+        charCounter.classList.remove('zero');
+        charProgressBar.style.backgroundColor='var(--';
+        submitBtn.style.cursor="pointer";
+        submitBtn.setAttribute('title',"");
+    }
+})
+
