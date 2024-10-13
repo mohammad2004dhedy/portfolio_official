@@ -1,395 +1,596 @@
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>mohammed dhedy</title>
-      <link rel="stylesheet" href="css/style.css" />
-      <link rel="stylesheet" href="css/all.min.css" />
-      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    </head>
-    <body>
-      <div class="upBtn" onclick="window.scrollTo(0,0)"><i class="fa-regular fa-circle-up"></i></div>
-      <div class="scrollLine"></div>
-      <header>
-        <div class="container">
-          <a href="#home">Dhedy</a>
-          <nav>
-            <div class="navIcon">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <ul class="navList">
-              <li class="active"><a href="#home">Home</a></li>
-              <li><a href="#skills">skills</a></li>
-              <li><a href="#projects">progects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <section class="main" id="home">
-        <div class="container">
-          <div class="imageParent">
-            <div class="image">
-              <img src="images/image.png" alt="" />
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mohammed dhedy</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="upBtn" onclick="window.scrollTo(0,0)">
+      <i class="fa-regular fa-circle-up"></i>
+    </div>
+    <div class="scrollLine"></div>
+    <header>
+      <div class="container">
+        <a href="#home">Dhedy</a>
+        <nav>
+          <div class="navIcon">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
+          <ul class="navList">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#projects">progects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="main" id="home">
+      <div class="container">
+        <div class="imageParent">
+          <div class="image">
+            <img src="images/image.png" alt="" />
+          </div>
+        </div>
 
-          <div class="info">
-            <h2>Mohammed Dhedy <br /><span>Web Developer</span></h2>
-            <p>
-              Web Developer with a strong background in front-end and back-end
-              technologies, including HTML, CSS, JavaScript, Bootstrap, and React.
-              Experienced in building responsive, user-friendly websites and web
-              applications. Adept at creating dynamic web solutions and
-              continuously learning new technologies to enhance development
-              skills. Passionate about solving complex problems and delivering
-              high-quality code to improve user experience and functionality
-            </p>
-            <div class="buttons">
-              <a href="#">Get In Touch</a>
-              <a href="#">Download CV</a>
+        <div class="info">
+          <h2>Mohammed Dhedy <br /><span>Web Developer</span></h2>
+          <p>
+            Web Developer with a strong background in front-end and back-end
+            technologies, including HTML, CSS, JavaScript, Bootstrap, and React.
+            Experienced in building responsive, user-friendly websites and web
+            applications. Adept at creating dynamic web solutions and
+            continuously learning new technologies to enhance development
+            skills. Passionate about solving complex problems and delivering
+            high-quality code to improve user experience and functionality
+          </p>
+          <div class="buttons">
+            <a href="#">Get In Touch</a>
+            <a href="#">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-aos="fade-up" class="skills" id="skills">
+      <div class="container">
+        <div class="sectionTitle">
+          <h3>Skills</h3>
+          <p>skills that i have gained through my carrer</p>
+        </div>
+        <div class="thumbnail">
+          <button data-cat="all" class="active" type="button">All</button>
+          <button data-cat="language" type="button">Languages</button>
+          <button data-cat="workspace" type="button">WorkSpaces</button>
+          <button data-cat="soft" type="button">soft skills</button>
+        </div>
+        <div class="content">
+          <div data-aos="fade-up-right" class="box active" data-type="language">
+            <div class="BackSide">
+              <div class="icon">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <div class="info">
+                <h4>Html</h4>
+                <div class="progress"><span data-target="70%"></span></div>
+                <a href="#projects">see projects</a>
+              </div>
+            </div>
+            <div class="FrontSide">
+              <div class="icon">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <div class="info">
+                <h4>Html</h4>
+                <p>build website sturcture with html</p>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up-right" class="box active" data-type="language">
+            <div class="BackSide">
+              <div class="icon">
+                <i class="fa-brands fa-css3"></i>
+              </div>
+              <div class="info">
+                <h4>Css</h4>
+                <div class="progress"><span data-target="70%"></span></div>
+                <a href="projects">see projects</a>
+              </div>
+            </div>
+            <div class="FrontSide">
+              <div class="icon">
+                <i class="fa-brands fa-css3"></i>
+              </div>
+              <div class="info">
+                <h4>Css</h4>
+                <p>build website sturcture with html</p>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="box active" data-type="language">
+            <div class="BackSide">
+              <div class="icon">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <div class="info">
+                <h4>JavaScript</h4>
+                <div class="progress"><span data-target="60%"></span></div>
+                <a href="#projects">see projects</a>
+              </div>
+            </div>
+            <div class="FrontSide">
+              <div class="icon">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <div class="info">
+                <h4>JavaScript</h4>
+                <p>build website sturcture with html</p>
+              </div>
+            </div>
+          </div>
+          <div
+            data-aos="fade-up-right"
+            class="box active"
+            data-type="workspace"
+          >
+            <div class="BackSide">
+              <div class="icon">
+                <i class="fa-brands fa-bootstrap"></i>
+              </div>
+              <div class="info">
+                <h4>BootStrab</h4>
+                <div class="progress"><span data-target="80%"></span></div>
+                <a href="#projects">see projects</a>
+              </div>
+            </div>
+            <div class="FrontSide">
+              <div class="icon">
+                <i class="fa-brands fa-bootstrap"></i>
+              </div>
+              <div class="info">
+                <h4>BootStrab</h4>
+                <p>build website sturcture with html</p>
+              </div>
+            </div>
+          </div>
+          <div
+            data-aos="fade-up-right"
+            class="box active"
+            data-type="workspace"
+          >
+            <div class="BackSide">
+              <div class="icon">
+                <i class="fa-brands fa-react"></i>
+              </div>
+              <div class="info">
+                <h4>React(Beggenir)</h4>
+                <div class="progress"><span data-target="38%"></span></div>
+                <a href="#projects">see projects</a>
+              </div>
+            </div>
+            <div class="FrontSide">
+              <div class="icon">
+                <i class="fa-brands fa-react"></i>
+              </div>
+              <div class="info">
+                <h4>React</h4>
+                <p>build website sturcture with html</p>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up-right" class="box active" data-type="language">
+            <div class="BackSide">
+              <div class="icon">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <div class="info">
+                <h4>Sql</h4>
+                <div class="progress"><span data-target="65%"></span></div>
+                <a href="#projects">see projects</a>
+              </div>
+            </div>
+            <div class="FrontSide">
+              <div class="icon">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <div class="info">
+                <h4>sql</h4>
+                <p>build database systems with sql</p>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up-right" class="box active" data-type="language">
+            <div class="BackSide">
+              <div class="icon">
+                <i class="fa-brands fa-java"></i>
+              </div>
+              <div class="info">
+                <h4>Java</h4>
+                <div class="progress"><span data-target="50%"></span></div>
+                <a href="projects">see projects</a>
+              </div>
+            </div>
+            <div class="FrontSide">
+              <div class="icon">
+                <i class="fa-brands fa-java"></i>
+              </div>
+              <div class="info">
+                <h4>java</h4>
+                <p>build desktop,mobile apps with java</p>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up-right" class="box active" data-type="language">
+            <div class="BackSide">
+              <div class="icon">
+                <i class="fa-brands fa-php"></i>
+              </div>
+              <div class="info">
+                <h4>Php(learning...)</h4>
+                <div class="progress"><span data-target="5%"></span></div>
+                <a href="#projects">see projects</a>
+              </div>
+            </div>
+            <div class="FrontSide">
+              <div class="icon">
+                <i class="fa-brands fa-php"></i>
+              </div>
+              <div class="info">
+                <h4>Php</h4>
+                <p>Back-end</p>
+              </div>
+            </div>
+          </div>
+          <div class="box active" data-type="soft">
+            <div class="BackSide">
+              <div class="icon">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div class="info">
+                <h4>brain storming</h4>
+                <div class="progress"><span data-target="90%"></span></div>
+                <!-- <a href="#projects">see projects</a> -->
+              </div>
+            </div>
+            <div class="FrontSide">
+              <div class="icon">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div class="info">
+                <h4>brain storming</h4>
+                <p>brain storming with bright ideas</p>
+              </div>
+            </div>
+          </div>
+          <div class="box active" data-type="soft">
+            <div class="BackSide">
+              <div class="icon">
+                <i class="fa-regular fa-face-smile"></i>
+              </div>
+              <div class="info">
+                <h4>communication</h4>
+                <div class="progress"><span data-target="70%"></span></div>
+                <!-- <a href="projects">see projects</a> -->
+              </div>
+            </div>
+            <div class="FrontSide">
+              <div class="icon">
+                <i class="fa-regular fa-face-smile"></i>
+              </div>
+              <div class="info">
+                <h4>communication</h4>
+                <!-- <p>build website sturcture with html</p> -->
+              </div>
             </div>
           </div>
         </div>
-      </section>
-      <section data-aos="fade-up" class="skills" id="skills">
-        <div class="container">
-          <div class="sectionTitle">
-            <h3>Skills</h3>
-            <p>skills that i have gained through my carrer</p>
-          </div>
-          <div class="thumbnail">
-            <button data-cat="all" class="active" type="button">All</button>
-            <button data-cat="language" type="button">Languages</button>
-            <button data-cat="workspace" type="button">WorkSpaces</button>
-          </div>
-          <div class="content">
-            <div data-aos="fade-up-right" class="box active" data-type="language">
-              <div class="BackSide">
-                <div class="icon">
-                  <i class="fa-brands fa-html5"></i>
-                </div>
-                <div class="info">
-                  <h4>Html</h4>
-                  <div class="progress"><span data-target="70%">80%</span></div>
-                  <a href="#projects">see projects</a>
-                </div>
-              </div>
-              <div class="FrontSide">
-                <div class="icon">
-                  <i class="fa-brands fa-html5"></i>
-                </div>
-                <div class="info">
-                  <h4>Html</h4>
-                  <p>build website sturcture with html</p>
-                </div>
-              </div>
-            </div>
-            <div data-aos="fade-up-right" class="box active" data-type="language">
-              <div class="BackSide">
-                <div class="icon">
-                  <i class="fa-brands fa-css3"></i>
-                </div>
-                <div class="info">
-                  <h4>Css</h4>
-                  <div class="progress"><span data-target="60%">80%</span></div>
-                  <a href="projects">see projects</a>
-                </div>
-              </div>
-              <div class="FrontSide">
-                <div class="icon">
-                  <i class="fa-brands fa-css3"></i>
-                </div>
-                <div class="info">
-                  <h4>Css</h4>
-                  <p>build website sturcture with html</p>
-                </div>
-              </div>
-            </div>
-            <div data-aos="fade-up-right" class="box active" data-type="language">
-              <div class="BackSide">
-                <div class="icon">
-                  <i class="fa-brands fa-js"></i>
-                </div>
-                <div class="info">
-                  <h4>JavaScript</h4>
-                  <div class="progress"><span data-target="60%">80%</span></div>
-                  <a href="#projects">see projects</a>
-                </div>
-              </div>
-              <div class="FrontSide">
-                <div class="icon">
-                  <i class="fa-brands fa-js"></i>
-                </div>
-                <div class="info">
-                  <h4>JavaScript</h4>
-                  <p>build website sturcture with html</p>
-                </div>
-              </div>
-            </div>
-            <div data-aos="fade-up-right" class="box active" data-type="workspace">
-              <div class="BackSide">
-                <div class="icon">
-                  <i class="fa-brands fa-bootstrap"></i>
-                </div>
-                <div class="info">
-                  <h4>BootStrab</h4>
-                  <div class="progress"><span data-target="80%">80%</span></div>
-                  <a href="#projects">see projects</a>
-                </div>
-              </div>
-              <div class="FrontSide">
-                <div class="icon">
-                  <i class="fa-brands fa-bootstrap"></i>
-                </div>
-                <div class="info">
-                  <h4>BootStrab</h4>
-                  <p>build website sturcture with html</p>
-                </div>
-              </div>
-            </div>
-            <div data-aos="fade-up-right" class="box active" data-type="workspace">
-              <div class="BackSide">
-                <div class="icon">
-                  <i class="fa-brands fa-react"></i>
-                </div>
-                <div class="info">
-                  <h4>React</h4>
-                  <div class="progress"><span data-target="30%">80%</span></div>
-                  <a href="#projects">see projects</a>
-                </div>
-              </div>
-              <div class="FrontSide">
-                <div class="icon">
-                  <i class="fa-brands fa-react"></i>
-                </div>
-                <div class="info">
-                  <h4>React</h4>
-                  <p>build website sturcture with html</p>
-                </div>
-              </div>
-            </div>
-          </div>
+      </div>
+    </section>
+    <section data-aos="fade-up" class="projects" id="projects">
+      <div class="container">
+        <div class="sectionTitle">
+          <h3>projects</h3>
+          <p>
+            projects and profissional components that i have done through my
+            carrer
+          </p>
         </div>
-      </section>
-      <section data-aos="fade-up" class="projects" id="projects">
-        <div class="container">
-          <div class="sectionTitle">
-            <h3>projects</h3>
-            <p>
-              projects and profissional components that i have done through my
-              carrer
-            </p>
-          </div>
-          <div class="content">
-            <div data-aos="flip-right" class="box">
-              <img src="images/manasys.png" alt="project description image" />
-              <div class="info">
-                <h3>
-                  <a href="https://github.com/mohammad2004dhedy/product-manager/settings/pages">click here to visit project<br /></a>product manager
-                </h3>
-                <a href="https://github.com/mohammad2004dhedy/product-manager/settings/pages"><i class="fas fa-link"></i></a>
-              </div>
-            </div>
-            <div data-aos="flip-left" class="box">
-              <img src="images/agecalc.png" alt="project description image" />
-              <div class="info">
-                <h3>
-                  <a href="https://mohammad2004dhedy.github.io/Age-calculator/">click here to visit project<br /></a>Age Calculater
-                </h3>
-                <a href="https://mohammad2004dhedy.github.io/Age-calculator/"><i class="fas fa-link"></i></a>
-              </div>
-            </div>
-            <div data-aos="flip-right" class="box">
-              <img src="images/bondi.png" alt="project description image" />
-              <div class="info">
-                <h3>
-                  <a href="https://mohammad2004dhedy.github.io/Bondi-Design/">click here to visit project<br /></a>Bondi Design
-                </h3>
-                <a href="https://mohammad2004dhedy.github.io/Bondi-Design/"><i class="fas fa-link"></i></a>
-              </div>
-            </div>
-            <div data-aos="flip-left" class="box">
-              <img src="images/cardEffect.png" alt="project description image" />
-              <div class="info">
-                <h3>
-                  <a href="https://mohammad2004dhedy.github.io/Amazing-Hover-effect/">click here to visit project<br /></a>Card Effect
-                </h3>
-                <a href="https://mohammad2004dhedy.github.io/Amazing-Hover-effect/"><i class="fas fa-link"></i></a>
-              </div>
-            </div>
-            <div data-aos="flip-right" class="box">
-              <img src="images/gallery.png" alt="project description image" />
-              <div class="info">
-                <h3>
-                  <a href="https://mohammad2004dhedy.github.io/amazing-games-gallery-effect/">click here to visit project<br /></a>image gallery
-                </h3>
-                <a href="https://mohammad2004dhedy.github.io/amazing-games-gallery-effect/"><i class="fas fa-link"></i></a>
-              </div>
-            </div>
-            <div data-aos="flip-left" class="box">
-              <img src="images/imageEditor.png" alt="project description image" />
-              <div class="info">
-                <h3>
-                  <a href="https://mohammad2004dhedy.github.io/images-editior/">click here to visit project<br /></a>Image Editor
-                </h3>
-                <a href="https://mohammad2004dhedy.github.io/images-editior/"><i class="fas fa-link"></i></a>
-              </div>
-            </div>
-            <div data-aos="flip-right" class="box">
-              <img src="images/landingpage.png" alt="project description image" />
-              <div class="info">
-                <h3>
-                  <a href="https://mohammad2004dhedy.github.io/animated-Landing-Page/">click here to visit project<br /></a>landing page
-                </h3>
-                <a href="https://mohammad2004dhedy.github.io/animated-Landing-Page/"><i class="fas fa-link"></i></a>
-              </div>
-            </div>
-            <div data-aos="flip-left" class="box">
-              <img src="images/notesapp.png" alt="project description image" />
-              <div class="info">
-                <h3>
-                  <a href="https://mohammad2004dhedy.github.io/Notes-App/">click here to visit project<br /></a>Notes App
-                </h3>
-                <a href="https://mohammad2004dhedy.github.io/Notes-App/"><i class="fas fa-link"></i></a>
-              </div>
-            </div>
-            <div data-aos="flip-right" class="box">
-              <img src="images/profilecard.png" alt="project description image" />
-              <div class="info">
-                <h3>
-                  <a href="https://mohammad2004dhedy.github.io/profissional-profile-card/">click here to visit project<br /></a>Profile Card
-                </h3>
-                <a href="https://mohammad2004dhedy.github.io/profissional-profile-card/"><i class="fas fa-link"></i></a>
-              </div>
-            </div>
-            <div data-aos="flip-left" class="box">
-              <img src="images/slider.png" alt="project description image" />
-              <div class="info">
-                <h3>
-                  <a href="https://mohammad2004dhedy.github.io/forest-landing-page/">click here to visit project<br /></a>Image Slider
-                </h3>
-                <a href="https://mohammad2004dhedy.github.io/forest-landing-page/"><i class="fas fa-link"></i></a>
-              </div>
-            </div>
-            <div data-aos="flip-right" class="box">
-              <img src="images/shoesStore.png" alt="project description image" />
-              <div class="info">
-                <h3>
-                  <a href="https://mohammad2004dhedy.github.io/Shoes-Store/">click here to visit project<br /></a>Shoes Store
-                </h3>
-                <a href="https://mohammad2004dhedy.github.io/Shoes-Store/"><i class="fas fa-link"></i></a>
-              </div>
-            </div>
-            <div data-aos="flip-left" class="box">
-              <img src="images/textTospeak.png" alt="project description image" />
-              <div class="info">
-                <h3>
-                  <a href="https://mohammad2004dhedy.github.io/text-to-speak-app/?">click here to visit project<br /></a>Text To Speak
-                </h3>
-                <a href="https://mohammad2004dhedy.github.io/text-to-speak-app/?"><i class="fas fa-link"></i></a>
-              </div>
-            </div>
-          </div>
-          <a href="https://github.com/mohammad2004dhedy" class="seeMore">see more on github</a>
-        </div>
-      </section>
-      <section data-aos="fade-up" class="contact" id="contact">
-        <div class="container">
-          <div class="sectionTitle">
-            <h3>contact</h3>
-          </div>
-          <div class="content">
-            <form action="#" method="post">
-              <input
-                autocomplete="off"
-                required
-                class="main-input"
-                type="text"
-                name="name"
-                placeholder="name"
-              />
-              <input
-                autocomplete="off"
-                required
-                class="main-input"
-                type="email"
-                placeholder="email"
-              />
-              <div class="message">
-                <textarea
-                  autocomplete="off"
-                  required
-                  class="main-input"
-                  maxlength="250"
-                  name="your message"
-                  placeholder="your message"
-                ></textarea>
-                <span class="CharProgress"></span>
-                <span class="Charlimit"></span>
-              </div>
-              <button type="submit" class="submitBtn">
-                <span>send message</span>
-              </button>
-            </form>
+        <div class="content">
+          <div data-aos="flip-right" class="box">
+            <img src="images/manasys.png" alt="project description image" />
             <div class="info">
-              <div>
-                <h4>get in touch</h4>
-                <span>+970 595036555</span>
-                <span>+970 598154860</span>
-              </div>
-              <div>
-                <h4>where we are ?</h4>
-                <address>
-                  arraba jenin <br />
-                  palestine west bank <br />
-                  +123456789 <br />
-                  middle-east
-                </address>
-              </div>
+              <h3>
+                <a
+                  href="https://github.com/mohammad2004dhedy/product-manager/settings/pages"
+                  >click here to visit project<br /></a
+                >product manager
+              </h3>
+              <a
+                href="https://github.com/mohammad2004dhedy/product-manager/settings/pages"
+                ><i class="fas fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div data-aos="flip-left" class="box">
+            <img src="images/agecalc.png" alt="project description image" />
+            <div class="info">
+              <h3>
+                <a href="https://mohammad2004dhedy.github.io/Age-calculator/"
+                  >click here to visit project<br /></a
+                >Age Calculater
+              </h3>
+              <a href="https://mohammad2004dhedy.github.io/Age-calculator/"
+                ><i class="fas fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div data-aos="flip-right" class="box">
+            <img src="images/bondi.png" alt="project description image" />
+            <div class="info">
+              <h3>
+                <a href="https://mohammad2004dhedy.github.io/Bondi-Design/"
+                  >click here to visit project<br /></a
+                >Bondi Design
+              </h3>
+              <a href="https://mohammad2004dhedy.github.io/Bondi-Design/"
+                ><i class="fas fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div data-aos="flip-left" class="box">
+            <img src="images/cardEffect.png" alt="project description image" />
+            <div class="info">
+              <h3>
+                <a
+                  href="https://mohammad2004dhedy.github.io/Amazing-Hover-effect/"
+                  >click here to visit project<br /></a
+                >Card Effect
+              </h3>
+              <a
+                href="https://mohammad2004dhedy.github.io/Amazing-Hover-effect/"
+                ><i class="fas fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div data-aos="flip-right" class="box">
+            <img src="images/gallery.png" alt="project description image" />
+            <div class="info">
+              <h3>
+                <a
+                  href="https://mohammad2004dhedy.github.io/amazing-games-gallery-effect/"
+                  >click here to visit project<br /></a
+                >image gallery
+              </h3>
+              <a
+                href="https://mohammad2004dhedy.github.io/amazing-games-gallery-effect/"
+                ><i class="fas fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div data-aos="flip-left" class="box">
+            <img src="images/imageEditor.png" alt="project description image" />
+            <div class="info">
+              <h3>
+                <a href="https://mohammad2004dhedy.github.io/images-editior/"
+                  >click here to visit project<br /></a
+                >Image Editor
+              </h3>
+              <a href="https://mohammad2004dhedy.github.io/images-editior/"
+                ><i class="fas fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div data-aos="flip-right" class="box">
+            <img src="images/landingpage.png" alt="project description image" />
+            <div class="info">
+              <h3>
+                <a
+                  href="https://mohammad2004dhedy.github.io/animated-Landing-Page/"
+                  >click here to visit project<br /></a
+                >landing page
+              </h3>
+              <a
+                href="https://mohammad2004dhedy.github.io/animated-Landing-Page/"
+                ><i class="fas fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div data-aos="flip-left" class="box">
+            <img src="images/notesapp.png" alt="project description image" />
+            <div class="info">
+              <h3>
+                <a href="https://mohammad2004dhedy.github.io/Notes-App/"
+                  >click here to visit project<br /></a
+                >Notes App
+              </h3>
+              <a href="https://mohammad2004dhedy.github.io/Notes-App/"
+                ><i class="fas fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div data-aos="flip-right" class="box">
+            <img src="images/profilecard.png" alt="project description image" />
+            <div class="info">
+              <h3>
+                <a
+                  href="https://mohammad2004dhedy.github.io/profissional-profile-card/"
+                  >click here to visit project<br /></a
+                >Profile Card
+              </h3>
+              <a
+                href="https://mohammad2004dhedy.github.io/profissional-profile-card/"
+                ><i class="fas fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div data-aos="flip-left" class="box">
+            <img src="images/slider.png" alt="project description image" />
+            <div class="info">
+              <h3>
+                <a
+                  href="https://mohammad2004dhedy.github.io/forest-landing-page/"
+                  >click here to visit project<br /></a
+                >Image Slider
+              </h3>
+              <a href="https://mohammad2004dhedy.github.io/forest-landing-page/"
+                ><i class="fas fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div data-aos="flip-right" class="box">
+            <img src="images/shoesStore.png" alt="project description image" />
+            <div class="info">
+              <h3>
+                <a href="https://mohammad2004dhedy.github.io/Shoes-Store/"
+                  >click here to visit project<br /></a
+                >Shoes Store
+              </h3>
+              <a href="https://mohammad2004dhedy.github.io/Shoes-Store/"
+                ><i class="fas fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div data-aos="flip-left" class="box">
+            <img src="images/textTospeak.png" alt="project description image" />
+            <div class="info">
+              <h3>
+                <a
+                  href="https://mohammad2004dhedy.github.io/text-to-speak-app/?"
+                  >click here to visit project<br /></a
+                >Text To Speak
+              </h3>
+              <a href="https://mohammad2004dhedy.github.io/text-to-speak-app/?"
+                ><i class="fas fa-link"></i
+              ></a>
             </div>
           </div>
         </div>
-      </section>
-      <section data-aos="fade-up" class="quto">
-        <q
-          >عن عائشة رضي الله عنها، قال رسول الله صلى الله عليه وسلم : ((إن الله
-          يحب إذا عمل أحدكم عملاً أن يتقنه))</q
+        <a href="https://github.com/mohammad2004dhedy" class="seeMore"
+          >see more on github</a
         >
-        <span> رواه الطبراني في الأوسط ، وصححه الألباني</span>
-      </section>
-      <footer>
-        <div class="container">
-          <div class="Rights">
-            <a href="#" class="logo">Dhedy</a>
-          <div class="social">
-            <a href="https://github.com/mohammad2004dhedy"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/mohammad-dhedy/"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="facebook.com/profile.php?id=100008092711288"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/mohammad_dhedy/"><i class="fa-brands fa-instagram"></i></a>
-          </div>
-            <p>copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2024 <span>Mohammed Dhedy</span></p>
-          </div>
-          <div class="links">
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#projects">projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="up">
-              <a href="#home"><i data-aos="fade-right" class="fa-regular fa-circle-up"></i></a>
+      </div>
+    </section>
+    <section data-aos="fade-up" class="contact" id="contact">
+      <div class="container">
+        <div class="sectionTitle">
+          <h3>contact</h3>
+        </div>
+        <div class="content">
+          <form id="contact-form" method="post">
+            <input
+              autocomplete="off"
+              required
+              class="main-input"
+              type="text"
+              name="from_name"
+              placeholder="name"
+            />
+            <input
+              autocomplete="off"
+              required
+              class="main-input"
+              type="email"
+              placeholder="email"
+              name="email"
+            />
+            <div class="message">
+              <textarea
+                autocomplete="off"
+                required
+                class="main-input"
+                maxlength="250"
+                name="message"
+                placeholder="your message"
+              ></textarea>
+              <span class="CharProgress"></span>
+              <span class="Charlimit"></span>
+            </div>
+            <button type="submit" class="submitBtn">
+              <span>send message</span>
+            </button>
+          </form>
+          <div class="info">
+            <div>
+              <h4>get in touch</h4>
+              <span>+970 595036555</span>
+              <span>+970 598154860</span>
+            </div>
+            <div>
+              <h4>where we are ?</h4>
+              <address>
+                arraba jenin <br />
+                palestine west bank <br />
+                +123456789 <br />
+                middle-east
+              </address>
             </div>
           </div>
         </div>
-      </footer>
-      <script src="app.js"></script>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
-    </body>
-  </html>
+      </div>
+    </section>
+    <section data-aos="fade-up" class="quto">
+      <q
+        >عن عائشة رضي الله عنها، قال رسول الله صلى الله عليه وسلم : ((إن الله
+        يحب إذا عمل أحدكم عملاً أن يتقنه))</q
+      >
+      <span> رواه الطبراني في الأوسط ، وصححه الألباني</span>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="Rights">
+          <a href="#" class="logo">Dhedy</a>
+          <div class="social">
+            <a href="https://github.com/mohammad2004dhedy"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/mohammad-dhedy/"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="facebook.com/profile.php?id=100008092711288"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://www.instagram.com/mohammad_dhedy/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          <p>
+            copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2024
+            <span>Mohammed Dhedy</span>
+          </p>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="up">
+            <a href="#home"
+              ><i data-aos="fade-right" class="fa-regular fa-circle-up"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("Odryml8-PVY4eU0Uz");
+      })();
+    </script>
+  </body>
+</html>

@@ -376,7 +376,7 @@ header .container nav .navList li.active::before {
 .main .container .info .buttons a {
   color: white;
   border-radius: 20px;
-  padding: 10px 25px;
+  padding: 10px 20px;
   background: var(--titles-color);
   display: inline-block;
   margin: 0 10px;
@@ -384,11 +384,14 @@ header .container nav .navList li.active::before {
 .main .container .info .buttons a:nth-of-type(1) {
   background: crimson;
 }
-@media (max-width: 335px) {
+@media (max-width: 400px) {
   .main .container .info h2 {
     font-size:29px;
   }
   .main .container .info p{
+    font-size:13px;
+  }
+  .main .container .info .buttons a{
     font-size:13px;
   }
 }
@@ -427,6 +430,12 @@ border-color:var(--titles-color);
 .skills .container .thumbnail button[data-cat='all']{
 border-color: white;
 }
+@media (max-width:425px) {
+  .skills .container .thumbnail button{
+    width:90px;
+    font-size:12px;
+  }
+}
  .container .content {
   display: grid;
   grid-gap: 15px;
@@ -445,6 +454,7 @@ border-color: white;
   overflow: hidden;
   transition: 500ms,
   position 500ms ease 500ms;
+  border: solid 1px white;
 }
 .skills .container .content .box::before{
   content:"";
@@ -491,6 +501,7 @@ border-color: white;
   top: -100%;
   transform: rotate(45deg);
   transition: 500ms;
+  background:linear-gradient(45deg,crimson,var(--secondry-color),var(--titles-color));
 }
 .skills .container .content .box .BackSide .info a{
   color: white;

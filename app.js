@@ -1,25 +1,26 @@
 // ------------------ GENERAL BEHAVIOURS START ------------------
 let upBtn = document.querySelector(".upBtn");
-window.addEventListener("scroll",()=>{
-  if(window.scrollY>=200){
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 200) {
     upBtn.classList.add("active");
-  }
-  else{
+  } else {
     upBtn.classList.remove("active");
   }
-})
+});
 // ------------------------
 let as = document.querySelectorAll(".projects a");
 as.forEach((a) => {
   a.setAttribute("target", "_blank");
 });
 // ------------------------
-let scrollLine=document.querySelector(".scrollLine");
-window.addEventListener("scroll",_=>{
-  let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
-  let scrolled=document.documentElement.scrollTop;
-  scrollLine.style.width=`${(scrolled/height)*100}%`;
-})
+let scrollLine = document.querySelector(".scrollLine");
+window.addEventListener("scroll", (_) => {
+  let height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrolled = document.documentElement.scrollTop;
+  scrollLine.style.width = `${(scrolled / height) * 100}%`;
+});
 
 // ------------------ GENERAL BEHAVIOURS END ------------------
 let nav = document.querySelector("header .container nav");
@@ -107,4 +108,16 @@ textAreaInput.addEventListener("input", () => {
     submitBtn.style.cursor = "pointer";
     submitBtn.setAttribute("title", "submit message");
   }
+});
+// ----------------------  contact form ---------------------------
+document.getElementById("contact-form").addEventListener("submit", (event) => {
+  event.preventDefault();
+  emailjs.sendForm("service_bk5hwqg", "template_tefb3ip", event.target).then(
+      () => {
+          alert("email sent successfully");
+      },
+      (error) => {
+          alert("Failed to send email: " + JSON.stringify(error));
+      }
+  );
 });
