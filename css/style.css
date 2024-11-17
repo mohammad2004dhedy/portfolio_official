@@ -398,7 +398,7 @@ header .container nav .navList li.active::before {
 
 /* main end */
 .skills {
-  min-height:100vh;
+  /* min-height:100vh; */
 }
 .skills .container .thumbnail {
   display: flex;
