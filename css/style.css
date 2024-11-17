@@ -24,6 +24,35 @@ ul {
 body {
   background: var(--secondry-color);
   font-family: sans-serif;
+  position: relative;
+}
+.VisitorsAlert{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background:black;
+  border: solid 2px var(--primary-color);
+  border-radius:5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  padding: 10px;
+  z-index: 50;
+  text-align: center;
+  min-height:30vh;
+}
+.VisitorsAlert button{
+  background: crimson;
+  padding: 6px 16px;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
 body::-webkit-scrollbar {
   width:8px;

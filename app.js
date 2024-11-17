@@ -60,7 +60,7 @@ skillsMenuItem.forEach((skillCat) => {
         skillBox.classList.add("active");
       }
     });
-  AOS.refresh();
+    AOS.refresh();
   };
 });
 let removeActiveFromSkills = () => {
@@ -122,3 +122,13 @@ document.getElementById("contact-form").addEventListener("submit", (event) => {
     }
   );
 });
+// ============ handle visitors alert =============
+let VisitorsAlertTimer;
+let VisitorsAlert = document.querySelector(".VisitorsAlert");
+VisitorsAlertTimer = setTimeout(() => {
+  VisitorsAlert.style.display = "none";
+}, 6000);
+VisitorsAlert.querySelector("button").onclick = () => {
+  VisitorsAlert.style.display = "none";
+  clearTimeout(VisitorsAlertTimer);
+};
