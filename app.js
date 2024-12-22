@@ -115,7 +115,7 @@ document.getElementById("contact-form").addEventListener("submit", (event) => {
   event.preventDefault();
   emailjs.sendForm("service_bk5hwqg", "template_tefb3ip", event.target).then(
     () => {
-      alert("email sent successfully");
+      alert("email sent successfully"); 
     },
     (error) => {
       alert("Failed to send email: " + JSON.stringify(error));
