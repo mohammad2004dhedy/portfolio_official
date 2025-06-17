@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mohammed dhedy</title>
+    <title>Mohammed Dhedy - Web Developer</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
@@ -18,13 +18,18 @@
       </p>
       <button type="button">I Understand</button>
     </div>
+    
     <div class="upBtn" onclick="window.scrollTo(0,0)">
       <i class="fa-regular fa-circle-up"></i>
     </div>
+    
     <div class="scrollLine"></div>
+    
     <header>
       <div class="container">
-        <a href="#home">Dhedy</a>
+        <a href="#home" class="logo">
+          <span>D</span>hedy
+        </a>
         <nav>
           <div class="navIcon">
             <span></span>
@@ -33,652 +38,648 @@
           </div>
           <ul class="navList">
             <li class="active"><a href="#home">Home</a></li>
-            <li><a href="#skills">skills</a></li>
-            <li><a href="#projects">progects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
+          <div class="theme-toggle" id="themeToggle">
+            <div class="toggle-track">
+              <div class="toggle-thumb">
+                <i class="fas fa-sun sun-icon"></i>
+                <i class="fas fa-moon moon-icon"></i>
+              </div>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
+    
     <section class="main" id="home">
       <div class="container">
-        <div class="imageParent">
-          <div class="image">
-            <img src="images/me.jpg" alt="" />
+        <div class="hero-content">
+          <div class="imageParent">
+            <div class="image">
+              <img src="images/me.jpg" alt="Mohammed Dhedy" />
+              <div class="image-glow"></div>
+            </div>
+          </div>
+
+          <div class="info">
+            <div class="greeting">
+              <span class="wave">👋</span>
+              <span>Hello, I'm</span>
+            </div>
+            <h1>Mohammed Dhedy</h1>
+            <h2 class="typewriter">
+              <span class="role">Web Developer</span>
+            </h2>
+            <p>
+              Passionate Web Developer with expertise in front-end and back-end
+              technologies. I create responsive, user-friendly websites and web
+              applications using modern technologies like HTML, CSS, JavaScript,
+              Bootstrap, and React. Always eager to learn and implement cutting-edge
+              solutions to deliver exceptional user experiences.
+            </p>
+            <div class="buttons">
+              <a href="#contact" class="btn-primary">
+                <i class="fas fa-envelope"></i>
+                Get In Touch
+              </a>
+              <a href="#" class="btn-secondary">
+                <i class="fas fa-download"></i>
+                Download CV
+              </a>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/mohammad2004dhedy" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/mohammad-dhedy/" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/mohammad_dhedy/" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
           </div>
         </div>
-
-        <div class="info">
-          <h2>Mohammed Dhedy <br /><span>Web Developer</span></h2>
-          <p>
-            Web Developer with a strong background in front-end and back-end
-            technologies, including HTML, CSS, JavaScript, Bootstrap, and React.
-            Experienced in building responsive, user-friendly websites and web
-            applications. Adept at creating dynamic web solutions and
-            continuously learning new technologies to enhance development
-            skills. Passionate about solving complex problems and delivering
-            high-quality code to improve user experience and functionality
-          </p>
-          <div class="buttons">
-            <a href="#">Get In Touch</a>
-            <a href="#">Download CV</a>
+        
+        <div class="floating-elements">
+          <div class="floating-element" style="--delay: 0s">
+            <i class="fab fa-html5"></i>
+          </div>
+          <div class="floating-element" style="--delay: 1s">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <div class="floating-element" style="--delay: 2s">
+            <i class="fab fa-js-square"></i>
+          </div>
+          <div class="floating-element" style="--delay: 3s">
+            <i class="fab fa-react"></i>
           </div>
         </div>
       </div>
     </section>
+    
     <section data-aos="fade-up" class="skills" id="skills">
       <div class="container">
         <div class="sectionTitle">
-          <h3>Skills</h3>
-          <p>skills that i have gained through my carrer</p>
+          <h3>Skills & Expertise</h3>
+          <p>Technologies and skills I've mastered throughout my journey</p>
         </div>
         <div class="thumbnail">
-          <button data-cat="all" class="active" type="button">All</button>
-          <button data-cat="language" type="button">Languages</button>
-          <button data-cat="workspace" type="button">WorkSpaces</button>
-          <button data-cat="soft" type="button">soft skills</button>
+          <button data-cat="all" class="active" type="button">
+            <i class="fas fa-globe"></i>
+            All
+          </button>
+          <button data-cat="language" type="button">
+            <i class="fas fa-code"></i>
+            Languages
+          </button>
+          <button data-cat="workspace" type="button">
+            <i class="fas fa-tools"></i>
+            Frameworks
+          </button>
+          <button data-cat="soft" type="button">
+            <i class="fas fa-lightbulb"></i>
+            Soft Skills
+          </button>
         </div>
         <div class="content">
           <div data-aos="fade-up-right" class="box active" data-type="language">
-            <div class="BackSide">
-              <div class="icon">
-                <i class="fa-brands fa-html5"></i>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-html5"></i>
               </div>
-              <div class="info">
-                <h4>Html</h4>
-                <div class="progress"><span data-target="70%"></span></div>
-                <a href="#projects">see projects</a>
-              </div>
-            </div>
-            <div class="FrontSide">
-              <div class="icon">
-                <i class="fa-brands fa-html5"></i>
-              </div>
-              <div class="info">
-                <h4>Html</h4>
-                <p>build website sturcture with html</p>
+              <div class="skill-info">
+                <h4>HTML5</h4>
+                <p>Semantic markup and modern web standards</p>
+                <div class="skill-level">
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-width="85%"></div>
+                  </div>
+                  <span class="percentage">85%</span>
+                </div>
               </div>
             </div>
           </div>
+          
           <div data-aos="fade-up-right" class="box active" data-type="language">
-            <div class="BackSide">
-              <div class="icon">
-                <i class="fa-brands fa-css3"></i>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-css3-alt"></i>
               </div>
-              <div class="info">
-                <h4>Css</h4>
-                <div class="progress"><span data-target="70%"></span></div>
-                <a href="projects">see projects</a>
-              </div>
-            </div>
-            <div class="FrontSide">
-              <div class="icon">
-                <i class="fa-brands fa-css3"></i>
-              </div>
-              <div class="info">
-                <h4>Css</h4>
-                <p>build the website skin with css</p>
+              <div class="skill-info">
+                <h4>CSS3</h4>
+                <p>Modern styling with animations and responsive design</p>
+                <div class="skill-level">
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-width="80%"></div>
+                  </div>
+                  <span class="percentage">80%</span>
+                </div>
               </div>
             </div>
           </div>
+          
           <div data-aos="fade-up" class="box active" data-type="language">
-            <div class="BackSide">
-              <div class="icon">
-                <i class="fa-brands fa-js"></i>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-js-square"></i>
               </div>
-              <div class="info">
+              <div class="skill-info">
                 <h4>JavaScript</h4>
-                <div class="progress"><span data-target="60%"></span></div>
-                <a href="#projects">see projects</a>
-              </div>
-            </div>
-            <div class="FrontSide">
-              <div class="icon">
-                <i class="fa-brands fa-js"></i>
-              </div>
-              <div class="info">
-                <h4>JavaScript</h4>
-                <p>build the website brain with javascript</p>
+                <p>ES6+ features and modern JavaScript development</p>
+                <div class="skill-level">
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-width="75%"></div>
+                  </div>
+                  <span class="percentage">75%</span>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            data-aos="fade-up-right"
-            class="box active"
-            data-type="workspace"
-          >
-            <div class="BackSide">
-              <div class="icon">
-                <i class="fa-brands fa-bootstrap"></i>
+          
+          <div data-aos="fade-up-right" class="box active" data-type="workspace">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-bootstrap"></i>
               </div>
-              <div class="info">
-                <h4>BootStrab</h4>
-                <div class="progress"><span data-target="80%"></span></div>
-                <a href="#projects">see projects</a>
-              </div>
-            </div>
-            <div class="FrontSide">
-              <div class="icon">
-                <i class="fa-brands fa-bootstrap"></i>
-              </div>
-              <div class="info">
-                <h4>BootStrab</h4>
-                <p>speed the procces of bulding websites using bootstrab</p>
+              <div class="skill-info">
+                <h4>Bootstrap</h4>
+                <p>Rapid prototyping and responsive frameworks</p>
+                <div class="skill-level">
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-width="90%"></div>
+                  </div>
+                  <span class="percentage">90%</span>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            data-aos="fade-up-right"
-            class="box active"
-            data-type="workspace"
-          >
-            <div class="BackSide">
-              <div class="icon">
-                <i class="fa-brands fa-react"></i>
+          
+          <div data-aos="fade-up-right" class="box active" data-type="workspace">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-react"></i>
               </div>
-              <div class="info">
-                <h4>React(Beggenir)</h4>
-                <div class="progress"><span data-target="38%"></span></div>
-                <a href="#projects">see projects</a>
-              </div>
-            </div>
-            <div class="FrontSide">
-              <div class="icon">
-                <i class="fa-brands fa-react"></i>
-              </div>
-              <div class="info">
+              <div class="skill-info">
                 <h4>React</h4>
-                <p>build fast ,amazing websites with react</p>
+                <p>Component-based UI development</p>
+                <div class="skill-level">
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-width="65%"></div>
+                  </div>
+                  <span class="percentage">65%</span>
+                </div>
               </div>
             </div>
           </div>
+          
           <div data-aos="fade-up-right" class="box active" data-type="language">
-            <div class="BackSide">
-              <div class="icon">
-                <i class="fa-solid fa-database"></i>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-database"></i>
               </div>
-              <div class="info">
-                <h4>Sql</h4>
-                <div class="progress"><span data-target="65%"></span></div>
-                <a href="#projects">see projects</a>
-              </div>
-            </div>
-            <div class="FrontSide">
-              <div class="icon">
-                <i class="fa-solid fa-database"></i>
-              </div>
-              <div class="info">
-                <h4>sql</h4>
-                <p>build database systems with sql</p>
+              <div class="skill-info">
+                <h4>SQL</h4>
+                <p>Database design and management</p>
+                <div class="skill-level">
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-width="70%"></div>
+                  </div>
+                  <span class="percentage">70%</span>
+                </div>
               </div>
             </div>
           </div>
+          
           <div data-aos="fade-up-right" class="box active" data-type="language">
-            <div class="BackSide">
-              <div class="icon">
-                <i class="fa-brands fa-java"></i>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-java"></i>
               </div>
-              <div class="info">
+              <div class="skill-info">
                 <h4>Java</h4>
-                <div class="progress"><span data-target="50%"></span></div>
-                <a href="projects">see projects</a>
-              </div>
-            </div>
-            <div class="FrontSide">
-              <div class="icon">
-                <i class="fa-brands fa-java"></i>
-              </div>
-              <div class="info">
-                <h4>java</h4>
-                <p>build desktop,mobile apps with java</p>
+                <p>Object-oriented programming and applications</p>
+                <div class="skill-level">
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-width="60%"></div>
+                  </div>
+                  <span class="percentage">60%</span>
+                </div>
               </div>
             </div>
           </div>
+          
           <div data-aos="fade-up-right" class="box active" data-type="language">
-            <div class="BackSide">
-              <div class="icon">
-                <i class="fa-brands fa-php"></i>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-php"></i>
               </div>
-              <div class="info">
-                <h4>Php(learning...)</h4>
-                <div class="progress"><span data-target="5%"></span></div>
-                <a href="#projects">see projects</a>
-              </div>
-            </div>
-            <div class="FrontSide">
-              <div class="icon">
-                <i class="fa-brands fa-php"></i>
-              </div>
-              <div class="info">
-                <h4>Php</h4>
-                <p>Back-end</p>
+              <div class="skill-info">
+                <h4>PHP</h4>
+                <p>Server-side development (Learning)</p>
+                <div class="skill-level">
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-width="25%"></div>
+                  </div>
+                  <span class="percentage">25%</span>
+                </div>
               </div>
             </div>
           </div>
+          
           <div class="box active" data-aos="fade-up-right" data-type="soft">
-            <div class="BackSide">
-              <div class="icon">
-                <i class="fa-solid fa-brain"></i>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-lightbulb"></i>
               </div>
-              <div class="info">
-                <h4>brain storming</h4>
-                <div class="progress"><span data-target="90%"></span></div>
-                <!-- <a href="#projects">see projects</a> -->
-              </div>
-            </div>
-            <div class="FrontSide">
-              <div class="icon">
-                <i class="fa-solid fa-brain"></i>
-              </div>
-              <div class="info">
-                <h4>brain storming</h4>
-                <p>brain storming with bright ideas</p>
+              <div class="skill-info">
+                <h4>Problem Solving</h4>
+                <p>Creative thinking and innovative solutions</p>
+                <div class="skill-level">
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-width="95%"></div>
+                  </div>
+                  <span class="percentage">95%</span>
+                </div>
               </div>
             </div>
           </div>
+          
           <div class="box active" data-aos="fade-up-right" data-type="soft">
-            <div class="BackSide">
-              <div class="icon">
-                <i class="fa-brands fa-github"></i>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-git-alt"></i>
               </div>
-              <div class="info">
-                <h4>git & github</h4>
-                <div class="progress"><span data-target="70%"></span></div>
-                <!-- <a href="projects">see projects</a> -->
-              </div>
-            </div>
-            <div class="FrontSide">
-              <div class="icon">
-                <i class="fa-brands fa-github"></i>
-              </div>
-              <div class="info">
-                <h4>git & github</h4>
-                <p>source code management with git & github</p>
+              <div class="skill-info">
+                <h4>Git & GitHub</h4>
+                <p>Version control and collaboration</p>
+                <div class="skill-level">
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-width="85%"></div>
+                  </div>
+                  <span class="percentage">85%</span>
+                </div>
               </div>
             </div>
           </div>
+          
           <div class="box active" data-aos="fade-up-right" data-type="soft">
-            <div class="BackSide">
-              <div class="icon">
-                <i class="fa-solid fa-people-arrows"></i>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-users"></i>
               </div>
-              <div class="info">
-                <h4>communication</h4>
-                <div class="progress"><span data-target="90%"></span></div>
-                <!-- <a href="projects">see projects</a> -->
-              </div>
-            </div>
-            <div class="FrontSide">
-              <div class="icon">
-                <i class="fa-solid fa-people-arrows"></i>
-              </div>
-              <div class="info">
-                <h4>communication</h4>
+              <div class="skill-info">
+                <h4>Team Work</h4>
+                <p>Collaboration and communication skills</p>
+                <div class="skill-level">
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-width="90%"></div>
+                  </div>
+                  <span class="percentage">90%</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    
     <section data-aos="fade-up" class="projects" id="projects">
       <div class="container">
         <div class="sectionTitle">
-          <h3>projects</h3>
+          <h3>Featured Projects</h3>
           <p>
-            projects and profissional components that i have done through my
-            carrer
+            A showcase of my best work and professional components
           </p>
         </div>
         <div class="content">
-          <div data-aos="flip-right" class="box">
-            <img src="images/manasys.png" alt="project description image" />
-            <div class="info">
-              <h3>
-                <a
-                  href="https://mohammad2004dhedy.github.io/product-manager/"
-                  >click here to visit project<br /></a
-                >product manager
-              </h3>
-              <a
-                href="https://mohammad2004dhedy.github.io/product-manager/"
-                ><i class="fas fa-link"></i
-              ></a>
+          <div data-aos="flip-up" class="project-card">
+            <div class="project-image">
+              <img src="images/manasys.png" alt="Product Manager" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://mohammad2004dhedy.github.io/product-manager/" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-github">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Product Manager</h3>
+              <p>A comprehensive product management system with CRUD operations</p>
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
             </div>
           </div>
-          <div data-aos="flip-left" class="box">
-            <img src="images/agecalc.png" alt="project description image" />
-            <div class="info">
-              <h3>
-                <a href="https://mohammad2004dhedy.github.io/Age-calculator/"
-                  >click here to visit project<br /></a
-                >Age Calculater
-              </h3>
-              <a href="https://mohammad2004dhedy.github.io/Age-calculator/"
-                ><i class="fas fa-link"></i
-              ></a>
+          
+          <div data-aos="flip-up" class="project-card">
+            <div class="project-image">
+              <img src="images/agecalc.png" alt="Age Calculator" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://mohammad2004dhedy.github.io/Age-calculator/" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-github">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Age Calculator</h3>
+              <p>Interactive age calculator with beautiful UI and animations</p>
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
             </div>
           </div>
-          <div data-aos="flip-right" class="box">
-            <img src="images/bondi.png" alt="project description image" />
-            <div class="info">
-              <h3>
-                <a href="https://mohammad2004dhedy.github.io/Bondi-Design/"
-                  >click here to visit project<br /></a
-                >Bondi Design
-              </h3>
-              <a href="https://mohammad2004dhedy.github.io/Bondi-Design/"
-                ><i class="fas fa-link"></i
-              ></a>
+          
+          <div data-aos="flip-up" class="project-card">
+            <div class="project-image">
+              <img src="images/bondi.png" alt="Bondi Design" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://mohammad2004dhedy.github.io/Bondi-Design/" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-github">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Bondi Design</h3>
+              <p>Modern responsive website with clean design and smooth animations</p>
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Bootstrap</span>
+              </div>
             </div>
           </div>
-          <div data-aos="flip-left" class="box">
-            <img src="images/cardEffect.png" alt="project description image" />
-            <div class="info">
-              <h3>
-                <a
-                  href="https://mohammad2004dhedy.github.io/Amazing-Hover-effect/"
-                  >click here to visit project<br /></a
-                >Card Effect
-              </h3>
-              <a
-                href="https://mohammad2004dhedy.github.io/Amazing-Hover-effect/"
-                ><i class="fas fa-link"></i
-              ></a>
+          
+          <div data-aos="flip-up" class="project-card">
+            <div class="project-image">
+              <img src="images/notesapp.png" alt="Notes App" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://mohammad2004dhedy.github.io/Notes-App/" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-github">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Notes App</h3>
+              <p>Feature-rich note-taking application with local storage</p>
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
             </div>
           </div>
-          <div data-aos="flip-right" class="box">
-            <img src="images/gallery.png" alt="project description image" />
-            <div class="info">
-              <h3>
-                <a
-                  href="https://mohammad2004dhedy.github.io/amazing-games-gallery-effect/"
-                  >click here to visit project<br /></a
-                >image gallery
-              </h3>
-              <a
-                href="https://mohammad2004dhedy.github.io/amazing-games-gallery-effect/"
-                ><i class="fas fa-link"></i
-              ></a>
+          
+          <div data-aos="flip-up" class="project-card">
+            <div class="project-image">
+              <img src="images/movieland.png" alt="Movie Land" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://mohammad2004dhedy.github.io/movie-land/" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-github">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Movie Land</h3>
+              <p>Movie database application with search and filtering features</p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>API</span>
+                <span>CSS</span>
+              </div>
             </div>
           </div>
-          <div data-aos="flip-left" class="box">
-            <img src="images/imageEditor.png" alt="project description image" />
-            <div class="info">
-              <h3>
-                <a href="https://mohammad2004dhedy.github.io/images-editior/"
-                  >click here to visit project<br /></a
-                >Image Editor
-              </h3>
-              <a href="https://mohammad2004dhedy.github.io/images-editior/"
-                ><i class="fas fa-link"></i
-              ></a>
+          
+          <div data-aos="flip-up" class="project-card">
+            <div class="project-image">
+              <img src="images/ticTac.png" alt="Tic Tac Toe" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://mohammad2004dhedy.github.io/tic-tac-toe-game/" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-github">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div data-aos="flip-right" class="box">
-            <img src="images/landingpage.png" alt="project description image" />
-            <div class="info">
-              <h3>
-                <a
-                  href="https://mohammad2004dhedy.github.io/animated-Landing-Page/"
-                  >click here to visit project<br /></a
-                >landing page
-              </h3>
-              <a
-                href="https://mohammad2004dhedy.github.io/animated-Landing-Page/"
-                ><i class="fas fa-link"></i
-              ></a>
-            </div>
-          </div>
-          <div data-aos="flip-left" class="box">
-            <img src="images/notesapp.png" alt="project description image" />
-            <div class="info">
-              <h3>
-                <a href="https://mohammad2004dhedy.github.io/Notes-App/"
-                  >click here to visit project<br /></a
-                >Notes App
-              </h3>
-              <a href="https://mohammad2004dhedy.github.io/Notes-App/"
-                ><i class="fas fa-link"></i
-              ></a>
-            </div>
-          </div>
-          <div data-aos="flip-right" class="box">
-            <img src="images/profilecard.png" alt="project description image" />
-            <div class="info">
-              <h3>
-                <a
-                  href="https://mohammad2004dhedy.github.io/profissional-profile-card/"
-                  >click here to visit project<br /></a
-                >Profile Card
-              </h3>
-              <a
-                href="https://mohammad2004dhedy.github.io/profissional-profile-card/"
-                ><i class="fas fa-link"></i
-              ></a>
-            </div>
-          </div>
-          <div data-aos="flip-left" class="box">
-            <img src="images/slider.png" alt="project description image" />
-            <div class="info">
-              <h3>
-                <a
-                  href="https://mohammad2004dhedy.github.io/forest-landing-page/"
-                  >click here to visit project<br /></a
-                >Image Slider
-              </h3>
-              <a href="https://mohammad2004dhedy.github.io/forest-landing-page/"
-                ><i class="fas fa-link"></i
-              ></a>
-            </div>
-          </div>
-          <div data-aos="flip-right" class="box">
-            <img src="images/shoesStore.png" alt="project description image" />
-            <div class="info">
-              <h3>
-                <a href="https://mohammad2004dhedy.github.io/Shoes-Store/"
-                  >click here to visit project<br /></a
-                >Shoes Store
-              </h3>
-              <a href="https://mohammad2004dhedy.github.io/Shoes-Store/"
-                ><i class="fas fa-link"></i
-              ></a>
-            </div>
-          </div>
-          <div data-aos="flip-left" class="box">
-            <img src="images/textTospeak.png" alt="project description image" />
-            <div class="info">
-              <h3>
-                <a
-                  href="https://mohammad2004dhedy.github.io/text-to-speak-app/?"
-                  >click here to visit project<br /></a
-                >Text To Speak
-              </h3>
-              <a href="https://mohammad2004dhedy.github.io/text-to-speak-app/?"
-                ><i class="fas fa-link"></i
-              ></a>
-            </div>
-          </div>
-          <div data-aos="flip-right" class="box">
-            <img src="images/todoList.png" alt="project description image" />
-            <div class="info">
-              <h3>
-                <a href="https://mohammad2004dhedy.github.io/to-do-list/"
-                  >click here to visit project<br /></a
-                >To Do list
-              </h3>
-              <a href="https://mohammad2004dhedy.github.io/to-do-list/"
-                ><i class="fas fa-link"></i
-              ></a>
-            </div>
-          </div>
-
-          <div data-aos="flip-left" class="box">
-            <img src="images/ticTac.png" alt="project description image" />
-            <div class="info">
-              <h3>
-                <a href="https://mohammad2004dhedy.github.io/tic-tac-toe-game/"
-                  >click here to visit project<br /></a
-                >Tic Tac Toe
-              </h3>
-              <a href="https://mohammad2004dhedy.github.io/tic-tac-toe-game/"
-                ><i class="fas fa-link"></i
-              ></a>
-            </div>
-          </div>
-          <div data-aos="flip-right" class="box">
-            <img src="images/carmony.png" alt="project description image" />
-            <div class="info">
-              <h3>
-                <a
-                  href="https://mohammad2004dhedy.github.io/car-store/"
-                  >click here to visit project<br /></a
-                >carmony
-              </h3>
-              <a href="https://mohammad2004dhedy.github.io/car-store/"
-                ><i class="fas fa-link"></i
-              ></a>
-            </div>
-          </div>
-          <div data-aos="flip-right" class="box">
-            <img src="images/coffeshinno.png" alt="project description image" />
-            <div class="info">
-              <h3>
-                <a
-                  href="https://mohammad2004dhedy.github.io/coffeeshino-project/"
-                  >click here to visit project<br /></a
-                >coffeshino
-              </h3>
-              <a href="https://mohammad2004dhedy.github.io/coffeeshino-project/"
-                ><i class="fas fa-link"></i
-              ></a>
-            </div>
-          </div>
-
-          <div data-aos="flip-left" class="box">
-            <img src="images/movieland.png" alt="project description image" />
-            <div class="info">
-              <h3>
-                <a href="https://mohammad2004dhedy.github.io/movie-land/"
-                  >click here to visit project<br /></a
-                >Movie Land
-              </h3>
-              <a href="https://mohammad2004dhedy.github.io/movie-land/"
-                ><i class="fas fa-link"></i
-              ></a>
+            <div class="project-info">
+              <h3>Tic Tac Toe Game</h3>
+              <p>Interactive game with AI opponent and score tracking</p>
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
             </div>
           </div>
         </div>
-        <a href="https://github.com/mohammad2004dhedy" class="seeMore"
-          >see more on github</a
-        >
+        <a href="https://github.com/mohammad2004dhedy" class="seeMore">
+          <i class="fab fa-github"></i>
+          View All Projects on GitHub
+        </a>
       </div>
     </section>
+    
     <section data-aos="fade-up" class="contact" id="contact">
       <div class="container">
         <div class="sectionTitle">
-          <h3>contact</h3>
+          <h3>Get In Touch</h3>
+          <p>Let's work together on your next project</p>
         </div>
         <div class="content">
           <form id="contact-form" method="post">
-            <input
-              autocomplete="off"
-              required
-              class="main-input"
-              type="text"
-              name="from_name"
-              placeholder="name"
-            />
-            <input
-              autocomplete="off"
-              required
-              class="main-input"
-              type="email"
-              placeholder="email"
-              name="email"
-            />
-            <div class="message">
+            <div class="form-group">
+              <input
+                autocomplete="off"
+                required
+                class="main-input"
+                type="text"
+                name="from_name"
+                placeholder="Your Name"
+              />
+              <i class="fas fa-user input-icon"></i>
+            </div>
+            <div class="form-group">
+              <input
+                autocomplete="off"
+                required
+                class="main-input"
+                type="email"
+                placeholder="Your Email"
+                name="email"
+              />
+              <i class="fas fa-envelope input-icon"></i>
+            </div>
+            <div class="form-group message">
               <textarea
                 autocomplete="off"
                 required
                 class="main-input"
                 maxlength="250"
                 name="message"
-                placeholder="your message"
+                placeholder="Your Message"
               ></textarea>
-              <span class="CharProgress"></span>
-              <span class="Charlimit"></span>
+              <i class="fas fa-comment input-icon"></i>
+              <div class="char-counter">
+                <span class="CharProgress"></span>
+                <span class="char-info">
+                  <span class="Charlimit"></span> characters remaining
+                </span>
+              </div>
             </div>
             <button type="submit" class="submitBtn">
-              <span>send message</span>
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
             </button>
           </form>
-          <div class="info">
-            <div>
-              <h4>get in touch</h4>
+          <div class="contact-info">
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <h4>Call Me</h4>
               <span>+970 595036555</span>
               <span>+970 598154860</span>
             </div>
-            <div>
-              <h4>where we are ?</h4>
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h4>Location</h4>
               <address>
-                arraba jenin <br />
-                palestine west bank <br />
-                +123456789 <br />
-                middle-east
+                Arraba, Jenin<br />
+                Palestine, West Bank<br />
+                Middle East
               </address>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h4>Email</h4>
+              <span>mohammed@example.com</span>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section data-aos="fade-up" class="quto">
-      <q
-        >عن عائشة رضي الله عنها، قال رسول الله صلى الله عليه وسلم : ((إن الله
-        يحب إذا عمل أحدكم عملاً أن يتقنه))</q
-      >
-      <span> رواه الطبراني في الأوسط ، وصححه الألباني</span>
+    
+    <section data-aos="fade-up" class="quote">
+      <div class="quote-content">
+        <i class="fas fa-quote-left quote-icon"></i>
+        <q>
+          عن عائشة رضي الله عنها، قال رسول الله صلى الله عليه وسلم : ((إن الله
+          يحب إذا عمل أحدكم عملاً أن يتقنه))
+        </q>
+        <span class="quote-source">رواه الطبراني في الأوسط ، وصححه الألباني</span>
+      </div>
     </section>
+    
     <footer>
       <div class="container">
-        <div class="Rights">
-          <a href="#" class="logo">Dhedy</a>
-          <div class="social">
-            <a href="https://github.com/mohammad2004dhedy"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-            <a href="https://www.linkedin.com/in/mohammad-dhedy/"
-              ><i class="fa-brands fa-linkedin-in"></i
-            ></a>
-            <a href="facebook.com/profile.php?id=100008092711288"
-              ><i class="fa-brands fa-facebook-f"></i
-            ></a>
-            <a href="https://www.instagram.com/mohammad_dhedy/"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
+        <div class="footer-content">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <span>D</span>hedy
+            </a>
+            <p>Creating digital experiences that matter</p>
+            <div class="social">
+              <a href="https://github.com/mohammad2004dhedy" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/mohammad-dhedy/" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/mohammad_dhedy/" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
           </div>
-          <p>
-            copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2024
-            <span>Mohammed Dhedy</span>
-          </p>
+          
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-contact">
+            <h4>Contact Info</h4>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+970 595036555</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>mohammed@example.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Palestine, West Bank</span>
+            </div>
+          </div>
         </div>
-        <div class="links">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <div class="up">
-            <a href="#home"
-              ><i data-aos="fade-right" class="fa-regular fa-circle-up"></i
-            ></a>
-          </div>
+        
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 <span>Mohammed Dhedy</span>. All rights reserved.
+          </p>
+          <a href="#home" class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+          </a>
         </div>
       </div>
     </footer>
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100
+      });
     </script>
     <script
       type="text/javascript"
