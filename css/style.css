@@ -639,6 +639,34 @@ nav {
   gap: 30px;
 }
 
+.skills .skill-groups {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.skill-group {
+  padding: 28px 30px;
+  background: var(--surface);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+}
+
+.skill-group h4 {
+  margin-bottom: 12px;
+  color: var(--accent-color);
+  font-size: 1.2rem;
+}
+
+.skill-group p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.role {
+  border-right: 0;
+  animation: none;
+}
+
 .skills .box {
   display: none;
 }

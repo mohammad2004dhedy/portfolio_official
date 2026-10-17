@@ -308,43 +308,6 @@ sections.forEach((section) => {
   observer.observe(section)
 })
 
-// Typewriter Effect for Hero Section
-const typewriterText = document.querySelector(".role")
-if (typewriterText) {
-  const text = typewriterText.textContent
-  const roles = ["Web Developer", "Frontend Developer", "UI/UX Enthusiast", "Problem Solver"]
-  let roleIndex = 0
-  let charIndex = 0
-  let isDeleting = false
-
-  const typeWriter = () => {
-    const currentRole = roles[roleIndex]
-
-    if (isDeleting) {
-      typewriterText.textContent = currentRole.substring(0, charIndex - 1)
-      charIndex--
-    } else {
-      typewriterText.textContent = currentRole.substring(0, charIndex + 1)
-      charIndex++
-    }
-
-    let typeSpeed = isDeleting ? 50 : 100
-
-    if (!isDeleting && charIndex === currentRole.length) {
-      typeSpeed = 2000 // Pause at end
-      isDeleting = true
-    } else if (isDeleting && charIndex === 0) {
-      isDeleting = false
-      roleIndex = (roleIndex + 1) % roles.length
-      typeSpeed = 500 // Pause before next role
-    }
-
-    setTimeout(typeWriter, typeSpeed)
-  }
-
-  // Start typewriter effect
-  setTimeout(typeWriter, 1000)
-}
 
 // Parallax Effect for Floating Elements
 window.addEventListener("scroll", () => {
